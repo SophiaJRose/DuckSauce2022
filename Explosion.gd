@@ -4,7 +4,7 @@ class_name Explosion
 
 # Declare member variables here. Examples:
 var anim: int
-var animSprite: AnimatedSprite
+var animSprite: AnimatedSprite2D
 
 func _init(animation:int = 1):
 	anim = animation
@@ -30,4 +30,4 @@ func _on_ExplosionHitbox_body_entered(body):
 		var knockback: Vector2
 		distance = body.global_position - position
 		knockback = distance.normalized() * (4000 / sqrt(distance.length()))
-		body.apply_impulse(Vector2(0,0),knockback)
+		body.apply_impulse(knockback, Vector2(0,0))

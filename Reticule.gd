@@ -15,7 +15,7 @@ func _ready():
 func _process(delta):
 	position = get_global_mouse_position()
 	if Input.is_action_just_pressed("click") && numClicks > 0:
-		var ExplosionInstance = Explosion.instance()
+		var ExplosionInstance = Explosion.instantiate()
 		ExplosionInstance._init(2)
 		ExplosionInstance.position = position
 		get_parent().add_child(ExplosionInstance)

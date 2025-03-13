@@ -73,7 +73,7 @@ func _ready():
 	get_node("TextLayer").get_node("ScoreLabel").visible = false
 	randomize()
 	for spawn in spawns:
-		var pattern = Patterns[randi() % Patterns.size()].instance()
+		var pattern = Patterns[randi() % Patterns.size()].instantiate()
 		var colour = Colours.keys()[randi() % Colours.size()]
 		while (usedColours.has(colour)):
 			colour = Colours.keys()[randi() % Colours.size()]
