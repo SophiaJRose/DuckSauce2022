@@ -88,13 +88,16 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("ui_reset"):
 		get_tree().reload_current_scene()
+	if Input.is_action_just_pressed("quit"):
+		get_tree().root.propagate_notification(NOTIFICATION_WM_CLOSE_REQUEST)
+		get_tree().quit()
 	var textLayer = get_node("TextLayer")
 	var scoreText = textLayer.get_node("ScoreLabel")
 	var explosionCounter = textLayer.get_node("ExplosionCounter")
 	var explosionCount = get_node("Reticule").numClicks
-	var explosionCounterString = "Explosions Left: " + String(explosionCount)
+	var explosionCounterString = "Explosions Left: %s" % explosionCount
 	if explosionCount == 0:
-		explosionCounterString = explosionCounterString + ". Press R to reset."
+		explosionCounterString = explosionCounterString + ". Press R to reset or Esc to quit."
 	explosionCounter.text = explosionCounterString
 	distanceScore = 0
 	totalScore = 0
@@ -115,10 +118,10 @@ func _process(delta):
 	bonuses["AllBlocksMoved"] = allBlocksMoved
 	if distanceScore != 0:
 		scoreText.visible = true
-		var scoreString = "Distance Score: " + String(distanceScore) + "\n"
+		var scoreString = "Distance Score: %s\n" % distanceScore
 		for bonus in bonuses.keys():
 			if bonuses[bonus]:
-				scoreString = scoreString + "Bonus: " + bonusStrings[bonus] + String(bonusValues[bonus]) + "\n"
+				scoreString = scoreString + "Bonus: %s%s\n" % [bonusStrings[bonus], bonusValues[bonus]]
 				totalScore += bonusValues[bonus]
-		scoreString = scoreString + "Total Score: " + String(totalScore)
+		scoreString = scoreString + "Total Score: %s" % totalScore
 		scoreText.text = scoreString
