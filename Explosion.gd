@@ -3,16 +3,15 @@ extends Node2D
 class_name Explosion
 
 # Declare member variables here. Examples:
-@export var anim: int
 @onready var animSprite: AnimatedSprite2D = $ExplosionAnimation
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	animSprite.play("Explosion%s" % anim)
+	animSprite.play("Explosion")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if animSprite.frame == animSprite.sprite_frames.get_frame_count(animSprite.animation) - 1:
+	if animSprite.frame == animSprite.sprite_frames.get_frame_count(animSprite.animation) - 1 && animSprite.frame_progress > 0.75:
 		queue_free()
 
 
