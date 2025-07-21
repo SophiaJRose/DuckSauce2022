@@ -27,14 +27,14 @@ var Colours = {	"Red": Red,
 				"Purple": Purple,
 				"Pink": Pink		}
 var usedColours = []
-var spawns = [	Vector2(204,100),
-				Vector2(204,500),
-				Vector2(306,300),
-				Vector2(512,100),
-				Vector2(512,500),
-				Vector2(718,300),
-				Vector2(820,100),
-				Vector2(820,500),	]
+var spawns = [	Vector2(256,120),
+				Vector2(256,600),
+				Vector2(448,360),
+				Vector2(640,120),
+				Vector2(640,600),
+				Vector2(832,360),
+				Vector2(1024,120),
+				Vector2(1024,600),	]
 var bonuses = {	"AllRedMoved": false,
 				"AllGreenMoved": false,
 				"AllBlueMoved": false,

@@ -20,5 +20,5 @@ func _on_ExplosionHitbox_body_entered(body):
 		var distance: Vector2
 		var knockback: Vector2
 		distance = body.global_position - position
-		knockback = distance.normalized() * (4000 / sqrt(distance.length()))
+		knockback = distance.normalized() * (4800 / sqrt(distance.length()))
 		body.apply_impulse(knockback, Vector2(0,0))

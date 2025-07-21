@@ -1,19 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://ck85sb3d4ff0i"]
 
-[ext_resource path="res://Box.tscn" type="PackedScene" id=1]
-[ext_resource path="res://BoxPattern.gd" type="Script" id=2]
+[ext_resource type="PackedScene" uid="uid://dh1kjglw3jn3x" path="res://Box.tscn" id="1"]
+[ext_resource type="Script" uid="uid://b63w2moevc5rx" path="res://BoxPattern.gd" id="2"]
 
 [node name="BoxPattern1" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource("2")
 
-[node name="LBox" parent="." instance=ExtResource( 1 )]
-position = Vector2( -40, 0 )
+[node name="LBox" parent="." instance=ExtResource("1")]
+position = Vector2(-48, 0)
 
-[node name="DBox" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 40 )
+[node name="DBox" parent="." instance=ExtResource("1")]
+position = Vector2(0, 48)
 
-[node name="UBox" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, -40 )
+[node name="UBox" parent="." instance=ExtResource("1")]
+position = Vector2(0, -48)
 
-[node name="RBox" parent="." instance=ExtResource( 1 )]
-position = Vector2( 40, 0 )
+[node name="RBox" parent="." instance=ExtResource("1")]
+position = Vector2(48, 0)

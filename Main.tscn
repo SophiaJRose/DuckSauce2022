@@ -5,13 +5,13 @@
 [ext_resource type="Script" uid="uid://btlvs7srvrhww" path="res://Main.gd" id="5"]
 
 [sub_resource type="RectangleShape2D" id="1"]
-size = Vector2(1024, 20)
+size = Vector2(1280, 24)
 
 [sub_resource type="RectangleShape2D" id="2"]
-size = Vector2(1024, 20)
+size = Vector2(1280, 24)
 
 [sub_resource type="RectangleShape2D" id="3"]
-size = Vector2(20, 600)
+size = Vector2(24, 720)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("5")
@@ -19,55 +19,55 @@ script = ExtResource("5")
 [node name="Walls" type="Node2D" parent="."]
 
 [node name="TopWall" type="StaticBody2D" parent="Walls"]
-position = Vector2(512, 0)
+position = Vector2(640, 0)
 
 [node name="TpWlColShape2D" type="CollisionShape2D" parent="Walls/TopWall"]
 shape = SubResource("1")
 
 [node name="TpWlColour" type="ColorRect" parent="Walls/TopWall"]
-offset_left = -512.0
-offset_top = -10.0
-offset_right = 512.0
-offset_bottom = 10.0
+offset_left = -640.0
+offset_top = -12.0
+offset_right = 640.0
+offset_bottom = 12.0
 color = Color(0.627451, 0.627451, 0.752941, 1)
 
 [node name="BottomWall" type="StaticBody2D" parent="Walls"]
-position = Vector2(512, 600)
+position = Vector2(640, 720)
 
 [node name="BmWlColShape2D" type="CollisionShape2D" parent="Walls/BottomWall"]
 shape = SubResource("2")
 
 [node name="BmWlColour" type="ColorRect" parent="Walls/BottomWall"]
-offset_left = -512.0
-offset_top = -10.0
-offset_right = 512.0
-offset_bottom = 10.0
+offset_left = -640.0
+offset_top = -12.0
+offset_right = 640.0
+offset_bottom = 12.0
 color = Color(0.627451, 0.627451, 0.752941, 1)
 
 [node name="LeftWall" type="StaticBody2D" parent="Walls"]
-position = Vector2(0, 300)
+position = Vector2(0, 360)
 
 [node name="LtWlColShape2D" type="CollisionShape2D" parent="Walls/LeftWall"]
 shape = SubResource("3")
 
 [node name="LtWlColour" type="ColorRect" parent="Walls/LeftWall"]
-offset_left = -10.0
-offset_top = -300.0
-offset_right = 10.0
-offset_bottom = 300.0
+offset_left = -12.0
+offset_top = -360.0
+offset_right = 12.0
+offset_bottom = 360.0
 color = Color(0.627451, 0.627451, 0.752941, 1)
 
 [node name="RightWall" type="StaticBody2D" parent="Walls"]
-position = Vector2(1024, 300)
+position = Vector2(1280, 360)
 
 [node name="RtWlColShape2D" type="CollisionShape2D" parent="Walls/RightWall"]
 shape = SubResource("3")
 
 [node name="RtWlColour" type="ColorRect" parent="Walls/RightWall"]
-offset_left = -10.0
-offset_top = -300.0
-offset_right = 10.0
-offset_bottom = 300.0
+offset_left = -12.0
+offset_top = -360.0
+offset_right = 12.0
+offset_bottom = 360.0
 color = Color(0.627451, 0.627451, 0.752941, 1)
 
 [node name="Reticule" type="Node2D" parent="."]
@@ -81,15 +81,15 @@ texture = ExtResource("3")
 layer = 7
 
 [node name="ScoreLabel" type="Label" parent="TextLayer"]
-offset_left = 20.0
+offset_left = 24.0
 offset_top = 20.0
-offset_right = 60.0
-offset_bottom = 34.0
+offset_right = 72.0
+offset_bottom = 43.0
 text = "Score:"
 
 [node name="ExplosionCounter" type="Label" parent="TextLayer"]
-offset_left = 20.0
-offset_top = 566.0
-offset_right = 60.0
-offset_bottom = 580.0
+offset_left = 24.0
+offset_top = 672.0
+offset_right = 145.0
+offset_bottom = 695.0
 text = "Explosions left: "
