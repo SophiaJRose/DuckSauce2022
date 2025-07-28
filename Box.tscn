@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dh1kjglw3jn3x"]
+[gd_scene load_steps=3 format=3 uid="uid://dh1kjglw3jn3x"]
+
+[ext_resource type="Texture2D" uid="uid://brbafxqyapyqm" path="res://Assets/RedBlock.png" id="1_0bkxv"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(48, 48)
@@ -9,8 +11,5 @@ gravity_scale = 0.0
 [node name="BoxColShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("1")
 
-[node name="BoxColour" type="ColorRect" parent="."]
-offset_left = -24.0
-offset_top = -24.0
-offset_right = 24.0
-offset_bottom = 24.0
+[node name="BoxSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_0bkxv")

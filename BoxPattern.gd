@@ -2,19 +2,19 @@ extends Node2D
 
 
 # Declare member variables here. Examples:
-var colour: Color
+var colour: Texture
 var boxStartPoints = {}
 var totalDistance: int
 var allMoved: bool
 
-func init(boxColour: Color):
+func init(boxColour: Texture):
 	colour = boxColour
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for child in get_children():
-		child.get_node("BoxColour").color = colour
+		child.get_node("BoxSprite").texture = colour
 		boxStartPoints[child.name] = child.global_position
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

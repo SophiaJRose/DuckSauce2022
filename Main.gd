@@ -10,14 +10,14 @@ const BoxPattern3 = preload("res://BoxPattern3.tscn")
 var Patterns = [BoxPattern1,
 				BoxPattern2,
 				BoxPattern3	]
-var Red = Color8(224,64,64)
-var Green = Color8(64,224,64)
-var Blue = Color8(64,64,224)
-var Yellow = Color8(224,224,64)
-var Orange = Color8(224,128,64)
-var Cyan = Color8(64,224,256)
-var Purple = Color8(160,64,224)
-var Pink = Color8(224,96,128)
+var Red = preload("res://Assets/RedBlock.png")
+var Green = preload("res://Assets/GreenBlock.png")
+var Blue = preload("res://Assets/BlueBlock.png")
+var Yellow = preload("res://Assets/YellowBlock.png")
+var Orange = preload("res://Assets/OrangeBlock.png")
+var Cyan = preload("res://Assets/CyanBlock.png")
+var Purple = preload("res://Assets/PurpleBlock.png")
+var Pink = preload("res://Assets/PinkBlock.png")
 var Colours = {	"Red": Red,
 				"Green": Green,
 				"Blue": Blue,
@@ -59,7 +59,7 @@ var bonusStrings = {"AllRedMoved": "All Red Blocks Moved +",
 					"AllGreenMoved": "All Green Blocks Moved +",
 					"AllBlueMoved": "All Blue Blocks Moved +",
 					"AllYellowMoved": "All Yellow Blocks Moved +",
-					"AllOrangeMoved": "All Oranges Blocks Moved +",
+					"AllOrangeMoved": "All Orange Blocks Moved +",
 					"AllCyanMoved": "All Cyan Blocks Moved +",
 					"AllPurpleMoved": "All Purple Blocks Moved +",
 					"AllPinkMoved": "All Pink Blocks Moved +",
