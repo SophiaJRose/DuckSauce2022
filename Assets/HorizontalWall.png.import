@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bskf6ojwtrbci"
-path="res://.godot/imported/HoriztontalWall.png-a4f843248b51d4d7f140b54458d5d301.ctex"
+path="res://.godot/imported/HorizontalWall.png-66184b9092c6892c6613ddb2605d9752.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HoriztontalWall.png"
-dest_files=["res://.godot/imported/HoriztontalWall.png-a4f843248b51d4d7f140b54458d5d301.ctex"]
+source_file="res://Assets/HorizontalWall.png"
+dest_files=["res://.godot/imported/HorizontalWall.png-66184b9092c6892c6613ddb2605d9752.ctex"]
 
 [params]
 

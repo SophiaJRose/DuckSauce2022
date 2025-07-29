@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://bs35si3e4k2lk"]
 
 [ext_resource type="Script" uid="uid://dpvxuff4m8faq" path="res://Reticule.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://bskf6ojwtrbci" path="res://Assets/HoriztontalWall.png" id="2_fos0i"]
+[ext_resource type="Texture2D" uid="uid://bskf6ojwtrbci" path="res://Assets/HorizontalWall.png" id="2_fos0i"]
 [ext_resource type="Texture2D" uid="uid://du77uknudthxd" path="res://Assets/Reticule.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://c8tiko3h6c3to" path="res://Assets/VerticalWall.png" id="3_3dxm6"]
 [ext_resource type="Texture2D" uid="uid://de3vbqbnggikk" path="res://Assets/Background.png" id="4_cm0pq"]
