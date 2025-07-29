@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bs35si3e4k2lk"]
+[gd_scene load_steps=12 format=3 uid="uid://bs35si3e4k2lk"]
 
 [ext_resource type="Script" uid="uid://dpvxuff4m8faq" path="res://Reticule.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://bskf6ojwtrbci" path="res://Assets/HoriztontalWall.png" id="2_fos0i"]
@@ -15,6 +15,16 @@ size = Vector2(1280, 16)
 
 [sub_resource type="RectangleShape2D" id="3"]
 size = Vector2(16, 720)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3dxm6"]
+line_spacing = -6.0
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lgr22"]
+line_spacing = -6.0
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("5")
@@ -75,18 +85,16 @@ offset_left = 24.0
 offset_top = 20.0
 offset_right = 72.0
 offset_bottom = 43.0
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 4
 text = "Score:"
+label_settings = SubResource("LabelSettings_3dxm6")
 
 [node name="ExplosionCounter" type="Label" parent="TextLayer"]
 offset_left = 24.0
 offset_top = 672.0
 offset_right = 145.0
 offset_bottom = 695.0
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 4
 text = "Explosions left: "
+label_settings = SubResource("LabelSettings_lgr22")
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -1
